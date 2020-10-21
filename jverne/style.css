@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+
+  * {
+      font-family: Product Sans;
+  }
+
+  #main {
+    display:grid;
+    grid-template-rows: auto ;
+    grid-template-columns: auto;
+    grid-column-gap: 1fr 2fr 5fr 1fr;
+    grid-template-areas:
+    ". header ."
+    ". image ."
+    ". content ."
+    ". footer .";
+    justify-items: stretch;
+  }
+
+h1 {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+  header{
+    background-color:#a5a5a5;
+    text-align: center;
+    font-size: 30px;
+    grid-area: header;
+  }
+
+  #img-div {
+    grid-area: image;
+    display:grid;
+    justify-items: center;
+    text-align: center;
+  }
+
+  #image{
+    max-width: 100%;
+    display: block;
+  }
+
+
+  #img-caption {
+    margin : 20px;
+  }
+
+  #tribute-info {
+    justify-self: center;
+    padding: 0 20% 0 20%;
+    grid-area: content;
+    display: grid;
+  }

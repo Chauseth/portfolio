@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chauseth</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <div id="main">
+            
+            <header id="header">
+                <h1 id="title" class="text-center">Formulaire test HTML</h1>
+                <p id="description" class="text-center description">Formulaire crée dans le cadre de la formation freeCodeCamp. Test sur les formulaires.</p>
+                <p class=" text-center description">Aucune données n'est recueilli via ce formulaire (le bouton ne fait aucune action).</p>
+            </header>
+
+                <form id="survey-form">
+                    <div class="div-form">
+                        <label id="name-label"  for="name">Nom : </label>
+                        <input type="text" id="name" class="champ" name="name" placeholder="Entre votre nom" required>
+                        
+                    </div>
+
+
+                    <div class="div-form">
+                    <label id="email-label"  for="email">Email : </label>
+                    <input type="email" id="email" class="champ" name="email" placeholder="Entre votre adresse email" required>
+                    
+                    </div>
+
+                    <div class="div-form">
+                    <label id="number-label"  for="number">Âge : </label>
+                    <input type="number" id="number" class="champ" name="number" placeholder="Âge" min="1" max="120">
+                    
+                    </div>
+
+                    <div class="div-form">
+                    <label for="dropdown">Genre : </label>
+                    <select id="dropdown" name="genre" class="champ" required>
+                        <option disabled selected value>-- Veuillez choisir une option --</option>
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                        <option value="Autres">Autres</option>
+                    </select>
+                    
+                    </div>
+
+                    <div class="div-form boutons">
+                        
+                        <fieldset class="radios">
+                        <legend>Quel est votre niveau en développement ?</legend>
+
+                        <label>
+                        <input type="radio" class="input-radio" name="level" value="debutant">
+                            Débutant </label>
+
+                        <label>
+                        <input type="radio" class="input-radio" name="level" value="confirme">
+                            Confirmé </label>
+
+                        <label>
+                        <input type="radio" class="input-radio" name="level" value="expert">
+                            Expert </label>
+                        </fieldset>
+                    </div>
+
+
+                    <div class="div-form boutons">
+                  
+                       
+                        <fieldset class="checkboxes">
+                            <legend>Quelles sont les compétences que vous possédez ?</legend>
+                        <label>
+                        <input type="checkbox" class="input-checkbox" name="competences" value="HTML5">
+                        HTML5</label>
+
+                        <label>
+                        <input type="checkbox" class="input-checkbox" name="competences" value="CSS3"> 
+                        CSS3</label>
+                        
+                        <label>
+                        <input type="checkbox" class="input-checkbox" name="competences" value="Javascript">
+                        Javascript</label>
+
+                        <label>
+                        <input type="checkbox" class="input-checkbox" name="competences" value="React">
+                        React</label>
+
+                        <label>
+                        <input type="checkbox" class="input-checkbox" name="competences" value="Angular">
+                        Angular</label>
+
+                        <label>
+                        <input type="checkbox" class="input-checkbox" name="competences" value="Vue.js">
+                        Vue.js</label>
+                        </fieldset>
+                  
+                    </div>
+
+                    <div class="div-form">
+                    <p>Commentaires : </p>
+                    <textarea id="commentaires" class="champ text-area" name="commentaire" placeholder="Entrez votre commentaire ici..."></textarea>
+                    </div>
+
+                    <div class="div-form submit-button">
+                    <button type="submit" id="submit" class="submit-button"> Soumettre </button>
+                    </div>
+
+                </form>
+
+
+        </div>
+    </body>
+</html>
